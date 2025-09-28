@@ -64,14 +64,18 @@ CMAKE_BINARY_DIR = /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-de
 
 # The main recursive "all" target.
 all: CMakeFiles/comp_grafica.dir/all
-all: CMakeFiles/new.dir/all
 all: CMakeFiles/test_glut.dir/all
+all: CMakeFiles/menu.dir/all
+all: CMakeFiles/PolygonDrawer.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/comp_grafica.dir/codegen
-codegen: CMakeFiles/new.dir/codegen
 codegen: CMakeFiles/test_glut.dir/codegen
+codegen: CMakeFiles/menu.dir/codegen
+codegen: CMakeFiles/PolygonDrawer.dir/codegen
+codegen: CMakeFiles/main.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -80,8 +84,10 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/comp_grafica.dir/clean
-clean: CMakeFiles/new.dir/clean
 clean: CMakeFiles/test_glut.dir/clean
+clean: CMakeFiles/menu.dir/clean
+clean: CMakeFiles/PolygonDrawer.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -91,12 +97,12 @@ clean: CMakeFiles/test_glut.dir/clean
 CMakeFiles/comp_grafica.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target comp_grafica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target comp_grafica"
 .PHONY : CMakeFiles/comp_grafica.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/comp_grafica.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/comp_grafica.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/comp_grafica.dir/rule
@@ -108,7 +114,7 @@ comp_grafica: CMakeFiles/comp_grafica.dir/rule
 # codegen rule for target.
 CMakeFiles/comp_grafica.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target comp_grafica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target comp_grafica"
 .PHONY : CMakeFiles/comp_grafica.dir/codegen
 
 # clean rule for target.
@@ -117,45 +123,13 @@ CMakeFiles/comp_grafica.dir/clean:
 .PHONY : CMakeFiles/comp_grafica.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/new.dir
-
-# All Build rule for target.
-CMakeFiles/new.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target new"
-.PHONY : CMakeFiles/new.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/new.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/new.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/new.dir/rule
-
-# Convenience name for target.
-new: CMakeFiles/new.dir/rule
-.PHONY : new
-
-# codegen rule for target.
-CMakeFiles/new.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=6,7 "Finished codegen for target new"
-.PHONY : CMakeFiles/new.dir/codegen
-
-# clean rule for target.
-CMakeFiles/new.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/clean
-.PHONY : CMakeFiles/new.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/test_glut.dir
 
 # All Build rule for target.
 CMakeFiles/test_glut.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target test_glut"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target test_glut"
 .PHONY : CMakeFiles/test_glut.dir/all
 
 # Build rule for subdir invocation for target.
@@ -172,13 +146,109 @@ test_glut: CMakeFiles/test_glut.dir/rule
 # codegen rule for target.
 CMakeFiles/test_glut.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=8,9 "Finished codegen for target test_glut"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=15,16 "Finished codegen for target test_glut"
 .PHONY : CMakeFiles/test_glut.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_glut.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/clean
 .PHONY : CMakeFiles/test_glut.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/menu.dir
+
+# All Build rule for target.
+CMakeFiles/menu.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target menu"
+.PHONY : CMakeFiles/menu.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/menu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/menu.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/menu.dir/rule
+
+# Convenience name for target.
+menu: CMakeFiles/menu.dir/rule
+.PHONY : menu
+
+# codegen rule for target.
+CMakeFiles/menu.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=13,14 "Finished codegen for target menu"
+.PHONY : CMakeFiles/menu.dir/codegen
+
+# clean rule for target.
+CMakeFiles/menu.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/clean
+.PHONY : CMakeFiles/menu.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/PolygonDrawer.dir
+
+# All Build rule for target.
+CMakeFiles/PolygonDrawer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target PolygonDrawer"
+.PHONY : CMakeFiles/PolygonDrawer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/PolygonDrawer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PolygonDrawer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/PolygonDrawer.dir/rule
+
+# Convenience name for target.
+PolygonDrawer: CMakeFiles/PolygonDrawer.dir/rule
+.PHONY : PolygonDrawer
+
+# codegen rule for target.
+CMakeFiles/PolygonDrawer.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=1,2 "Finished codegen for target PolygonDrawer"
+.PHONY : CMakeFiles/PolygonDrawer.dir/codegen
+
+# clean rule for target.
+CMakeFiles/PolygonDrawer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/clean
+.PHONY : CMakeFiles/PolygonDrawer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# codegen rule for target.
+CMakeFiles/main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12 "Finished codegen for target main"
+.PHONY : CMakeFiles/main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

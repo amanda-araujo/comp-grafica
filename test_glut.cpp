@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
     glutCreateWindow("FreeGLUT test"); // Cria tela principal: 'nome'
 
     // Propriedades da janela
-    glutInitWindowSize(400, 400);
+    glutInitWindowSize(500, 500);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 
     // Alterações na matriz de projeção da janela

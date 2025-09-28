@@ -72,24 +72,10 @@ include CMakeFiles/comp_grafica.dir/flags.make
 CMakeFiles/comp_grafica.dir/codegen:
 .PHONY : CMakeFiles/comp_grafica.dir/codegen
 
-CMakeFiles/comp_grafica.dir/main.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
-CMakeFiles/comp_grafica.dir/main.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp
-CMakeFiles/comp_grafica.dir/main.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/comp_grafica.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/main.cpp.o -MF CMakeFiles/comp_grafica.dir/main.cpp.o.d -o CMakeFiles/comp_grafica.dir/main.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp
-
-CMakeFiles/comp_grafica.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/comp_grafica.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp > CMakeFiles/comp_grafica.dir/main.cpp.i
-
-CMakeFiles/comp_grafica.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp -o CMakeFiles/comp_grafica.dir/main.cpp.s
-
 CMakeFiles/comp_grafica.dir/testopengl.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
 CMakeFiles/comp_grafica.dir/testopengl.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/testopengl.cpp
 CMakeFiles/comp_grafica.dir/testopengl.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/comp_grafica.dir/testopengl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/comp_grafica.dir/testopengl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/testopengl.cpp.o -MF CMakeFiles/comp_grafica.dir/testopengl.cpp.o.d -o CMakeFiles/comp_grafica.dir/testopengl.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/testopengl.cpp
 
 CMakeFiles/comp_grafica.dir/testopengl.cpp.i: cmake_force
@@ -103,7 +89,7 @@ CMakeFiles/comp_grafica.dir/testopengl.cpp.s: cmake_force
 CMakeFiles/comp_grafica.dir/test_glut.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
 CMakeFiles/comp_grafica.dir/test_glut.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/test_glut.cpp
 CMakeFiles/comp_grafica.dir/test_glut.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/comp_grafica.dir/test_glut.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/comp_grafica.dir/test_glut.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/test_glut.cpp.o -MF CMakeFiles/comp_grafica.dir/test_glut.cpp.o.d -o CMakeFiles/comp_grafica.dir/test_glut.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/test_glut.cpp
 
 CMakeFiles/comp_grafica.dir/test_glut.cpp.i: cmake_force
@@ -114,34 +100,64 @@ CMakeFiles/comp_grafica.dir/test_glut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/test_glut.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/test_glut.cpp -o CMakeFiles/comp_grafica.dir/test_glut.cpp.s
 
-CMakeFiles/comp_grafica.dir/new.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
-CMakeFiles/comp_grafica.dir/new.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/new.cpp
-CMakeFiles/comp_grafica.dir/new.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/comp_grafica.dir/new.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/new.cpp.o -MF CMakeFiles/comp_grafica.dir/new.cpp.o.d -o CMakeFiles/comp_grafica.dir/new.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/new.cpp
+CMakeFiles/comp_grafica.dir/Menu.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
+CMakeFiles/comp_grafica.dir/Menu.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/Menu.cpp
+CMakeFiles/comp_grafica.dir/Menu.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/comp_grafica.dir/Menu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/Menu.cpp.o -MF CMakeFiles/comp_grafica.dir/Menu.cpp.o.d -o CMakeFiles/comp_grafica.dir/Menu.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/Menu.cpp
 
-CMakeFiles/comp_grafica.dir/new.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/comp_grafica.dir/new.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Amanda/CLionProjects/comp-grafica/new.cpp > CMakeFiles/comp_grafica.dir/new.cpp.i
+CMakeFiles/comp_grafica.dir/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/comp_grafica.dir/Menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Amanda/CLionProjects/comp-grafica/Menu.cpp > CMakeFiles/comp_grafica.dir/Menu.cpp.i
 
-CMakeFiles/comp_grafica.dir/new.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/new.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/new.cpp -o CMakeFiles/comp_grafica.dir/new.cpp.s
+CMakeFiles/comp_grafica.dir/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/Menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/Menu.cpp -o CMakeFiles/comp_grafica.dir/Menu.cpp.s
+
+CMakeFiles/comp_grafica.dir/main.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
+CMakeFiles/comp_grafica.dir/main.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp
+CMakeFiles/comp_grafica.dir/main.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/comp_grafica.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/main.cpp.o -MF CMakeFiles/comp_grafica.dir/main.cpp.o.d -o CMakeFiles/comp_grafica.dir/main.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp
+
+CMakeFiles/comp_grafica.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/comp_grafica.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp > CMakeFiles/comp_grafica.dir/main.cpp.i
+
+CMakeFiles/comp_grafica.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp -o CMakeFiles/comp_grafica.dir/main.cpp.s
+
+CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o: CMakeFiles/comp_grafica.dir/flags.make
+CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/PolygonDrawer.cpp
+CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o: CMakeFiles/comp_grafica.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o -MF CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o.d -o CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o -c /mnt/c/Users/Amanda/CLionProjects/comp-grafica/PolygonDrawer.cpp
+
+CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Amanda/CLionProjects/comp-grafica/PolygonDrawer.cpp > CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.i
+
+CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica/PolygonDrawer.cpp -o CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.s
 
 # Object files for target comp_grafica
 comp_grafica_OBJECTS = \
-"CMakeFiles/comp_grafica.dir/main.cpp.o" \
 "CMakeFiles/comp_grafica.dir/testopengl.cpp.o" \
 "CMakeFiles/comp_grafica.dir/test_glut.cpp.o" \
-"CMakeFiles/comp_grafica.dir/new.cpp.o"
+"CMakeFiles/comp_grafica.dir/Menu.cpp.o" \
+"CMakeFiles/comp_grafica.dir/main.cpp.o" \
+"CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o"
 
 # External object files for target comp_grafica
 comp_grafica_EXTERNAL_OBJECTS =
 
-comp_grafica: CMakeFiles/comp_grafica.dir/main.cpp.o
 comp_grafica: CMakeFiles/comp_grafica.dir/testopengl.cpp.o
 comp_grafica: CMakeFiles/comp_grafica.dir/test_glut.cpp.o
-comp_grafica: CMakeFiles/comp_grafica.dir/new.cpp.o
+comp_grafica: CMakeFiles/comp_grafica.dir/Menu.cpp.o
+comp_grafica: CMakeFiles/comp_grafica.dir/main.cpp.o
+comp_grafica: CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o
 comp_grafica: CMakeFiles/comp_grafica.dir/build.make
 comp_grafica: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 comp_grafica: /usr/lib/x86_64-linux-gnu/libGLX.so
@@ -149,7 +165,7 @@ comp_grafica: /usr/lib/x86_64-linux-gnu/libGLU.so
 comp_grafica: /usr/lib/x86_64-linux-gnu/libglut.so
 comp_grafica: /usr/lib/x86_64-linux-gnu/libXi.so
 comp_grafica: CMakeFiles/comp_grafica.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable comp_grafica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable comp_grafica"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/comp_grafica.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

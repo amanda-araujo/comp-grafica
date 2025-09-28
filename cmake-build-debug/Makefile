@@ -137,19 +137,6 @@ comp_grafica/fast:
 .PHONY : comp_grafica/fast
 
 #=============================================================================
-# Target rules for targets named new
-
-# Build rule for target.
-new: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new
-.PHONY : new
-
-# fast build rule for target.
-new/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/build
-.PHONY : new/fast
-
-#=============================================================================
 # Target rules for targets named test_glut
 
 # Build rule for target.
@@ -162,12 +149,112 @@ test_glut/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/build
 .PHONY : test_glut/fast
 
+#=============================================================================
+# Target rules for targets named menu
+
+# Build rule for target.
+menu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 menu
+.PHONY : menu
+
+# fast build rule for target.
+menu/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/build
+.PHONY : menu/fast
+
+#=============================================================================
+# Target rules for targets named PolygonDrawer
+
+# Build rule for target.
+PolygonDrawer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PolygonDrawer
+.PHONY : PolygonDrawer
+
+# fast build rule for target.
+PolygonDrawer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/build
+.PHONY : PolygonDrawer/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+Menu.o: Menu.cpp.o
+.PHONY : Menu.o
+
+# target to build an object file
+Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/Menu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/Menu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Menu.cpp.o
+.PHONY : Menu.cpp.o
+
+Menu.i: Menu.cpp.i
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/Menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/Menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/Menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/menu.dir/build.make CMakeFiles/menu.dir/Menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
+PolygonDrawer.o: PolygonDrawer.cpp.o
+.PHONY : PolygonDrawer.o
+
+# target to build an object file
+PolygonDrawer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/PolygonDrawer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PolygonDrawer.cpp.o
+.PHONY : PolygonDrawer.cpp.o
+
+PolygonDrawer.i: PolygonDrawer.cpp.i
+.PHONY : PolygonDrawer.i
+
+# target to preprocess a source file
+PolygonDrawer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/PolygonDrawer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PolygonDrawer.cpp.i
+.PHONY : PolygonDrawer.cpp.i
+
+PolygonDrawer.s: PolygonDrawer.cpp.s
+.PHONY : PolygonDrawer.s
+
+# target to generate assembly for a file
+PolygonDrawer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolygonDrawer.dir/build.make CMakeFiles/PolygonDrawer.dir/PolygonDrawer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PolygonDrawer.cpp.s
+.PHONY : PolygonDrawer.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -176,6 +263,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -184,34 +272,8 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-new.o: new.cpp.o
-.PHONY : new.o
-
-# target to build an object file
-new.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/new.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/new.cpp.o
-.PHONY : new.cpp.o
-
-new.i: new.cpp.i
-.PHONY : new.i
-
-# target to preprocess a source file
-new.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/new.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/new.cpp.i
-.PHONY : new.cpp.i
-
-new.s: new.cpp.s
-.PHONY : new.s
-
-# target to generate assembly for a file
-new.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/new.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/new.cpp.s
-.PHONY : new.cpp.s
 
 test_glut.o: test_glut.cpp.o
 .PHONY : test_glut.o
@@ -273,15 +335,20 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... PolygonDrawer"
 	@echo "... comp_grafica"
-	@echo "... new"
+	@echo "... main"
+	@echo "... menu"
 	@echo "... test_glut"
+	@echo "... Menu.o"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
+	@echo "... PolygonDrawer.o"
+	@echo "... PolygonDrawer.i"
+	@echo "... PolygonDrawer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... new.o"
-	@echo "... new.i"
-	@echo "... new.s"
 	@echo "... test_glut.o"
 	@echo "... test_glut.i"
 	@echo "... test_glut.s"

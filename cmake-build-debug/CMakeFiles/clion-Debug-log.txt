@@ -1,4 +1,4 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /mnt/c/Users/Amanda/CLionProjects/comp-grafica -B /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug
--- Configuring done (0.2s)
--- Generating done (0.3s)
+-- Configuring done (0.3s)
+-- Generating done (0.5s)
 -- Build files have been written to: /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug

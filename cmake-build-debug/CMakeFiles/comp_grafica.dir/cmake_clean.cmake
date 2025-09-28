@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/comp_grafica.dir/Menu.cpp.o"
+  "CMakeFiles/comp_grafica.dir/Menu.cpp.o.d"
+  "CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o"
+  "CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o.d"
   "CMakeFiles/comp_grafica.dir/main.cpp.o"
   "CMakeFiles/comp_grafica.dir/main.cpp.o.d"
-  "CMakeFiles/comp_grafica.dir/new.cpp.o"
-  "CMakeFiles/comp_grafica.dir/new.cpp.o.d"
   "CMakeFiles/comp_grafica.dir/test_glut.cpp.o"
   "CMakeFiles/comp_grafica.dir/test_glut.cpp.o.d"
   "CMakeFiles/comp_grafica.dir/testopengl.cpp.o"
