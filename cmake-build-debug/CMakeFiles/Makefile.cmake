@@ -65,4 +65,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/menu.dir/DependInfo.cmake"
   "CMakeFiles/PolygonDrawer.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   )

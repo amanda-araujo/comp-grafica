@@ -188,6 +188,19 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
 Menu.o: Menu.cpp.o
 .PHONY : Menu.o
 
@@ -275,6 +288,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 test_glut.o: test_glut.cpp.o
 .PHONY : test_glut.o
 
@@ -339,6 +379,7 @@ help:
 	@echo "... comp_grafica"
 	@echo "... main"
 	@echo "... menu"
+	@echo "... test"
 	@echo "... test_glut"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
@@ -349,6 +390,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 	@echo "... test_glut.o"
 	@echo "... test_glut.i"
 	@echo "... test_glut.s"

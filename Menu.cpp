@@ -8,6 +8,8 @@
 #include <iostream>
 #include <thread>
 
+#include "PolygonDrawer.h"
+
 // Variáveis globais: lidas pelo OpenGl
 extern std::atomic<bool> onScreen; // Op1
 extern std::atomic<int> fillColor; // Op2
@@ -15,6 +17,7 @@ extern std::atomic<int> lineWidth; // Op3
 extern std::atomic<bool> clearScreen;  // Op4
 extern std::atomic<int> dataStructure; // Op5
 extern std::atomic<bool> exitSystem; // Op0 EXIT
+extern std::atomic<bool> fillPolygon; // OP6
 
 
 Menu::Menu() {} // Constructor
@@ -43,7 +46,8 @@ void Menu::help() {
     std::cout << "  3. Selecionar espessura da linha\n";
     std::cout << "  4. Limpar a tela apagando todos os pontos e polígono desenhado\n";
     std::cout << "  5. Escolher a estrutura de dados da implementação de preenchimento (ET ou AET)\n";
-    std::cout << "  6. Help - Ajuda com listagem dos comandos disponíveis e suas funções\n";
+    std::cout << "  6. Preenchimento do polígono\n";
+    std::cout << "  7. Help - Ajuda com listagem dos comandos disponíveis e suas funções\n";
     std::cout << "  0. Exit - Fecha a tela e encerra o sistema \n";
     std::cout << "===========================================\n";
     std::this_thread::sleep_for(std::chrono::milliseconds(5000));
@@ -62,7 +66,8 @@ void Menu::chooseOption() {
             std::cout << "3. Espessura da linha\n";
             std::cout << "4. Limpar tela\n";
             std::cout << "5. Escolher implementação \n";
-            std::cout << "6. Help\n";
+            std::cout << "6. Preenchimento do polígono\n";
+            std::cout << "7. Help\n";
             std::cout << "0. Exit\n";
             std::cout << "Entrar sua escolha: ";
 
@@ -79,7 +84,8 @@ void Menu::chooseOption() {
                 case 3: handleOption3(); break;
                 case 4: handleOption4(); break;
                 case 5: handleOption5(); break;
-                case 6: help(); break;
+                case 6: handleOption6(); break;
+                case 7: help(); break;
                 case 0: exit(); break;
                 default:
                     std::cout << "Opção inválida. Por favor tente novamente.\n";
@@ -159,6 +165,12 @@ void Menu::handleOption5() {
     int option; std::cin >> option;
     dataStructure = (option == 2 ? 2 : 1); // ET default (cobre entrada inválida)
 }
+
+void Menu::handleOption6() {
+    /* Preenchimento*/
+    fillPolygon = true;
+}
+
 
 void Menu::exit() {
     std::cout << "END. That's all folks!\n";

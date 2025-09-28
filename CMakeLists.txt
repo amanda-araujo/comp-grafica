@@ -15,6 +15,7 @@ add_executable(comp_grafica
         PolygonDrawer.cpp
         PolygonDrawer.h
         OpenGLWindow.h
+        test.cpp
 )
 target_link_libraries(comp_grafica ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES})
 
@@ -36,3 +37,5 @@ target_link_libraries(main ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} pthread)
 # >> Necessário passar explicitamente as bibliotecas utilizadasadd_executable(test test.cpp)
 
 
+add_executable(test test.cpp)
+target_link_libraries(test ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} pthread)

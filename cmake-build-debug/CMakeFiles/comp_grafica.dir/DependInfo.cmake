@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/Menu.cpp" "CMakeFiles/comp_grafica.dir/Menu.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/Menu.cpp.o.d"
   "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/PolygonDrawer.cpp" "CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/PolygonDrawer.cpp.o.d"
   "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/main.cpp" "CMakeFiles/comp_grafica.dir/main.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/main.cpp.o.d"
+  "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/test.cpp" "CMakeFiles/comp_grafica.dir/test.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/test.cpp.o.d"
   "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/test_glut.cpp" "CMakeFiles/comp_grafica.dir/test_glut.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/test_glut.cpp.o.d"
   "/mnt/c/Users/Amanda/CLionProjects/comp-grafica/testopengl.cpp" "CMakeFiles/comp_grafica.dir/testopengl.cpp.o" "gcc" "CMakeFiles/comp_grafica.dir/testopengl.cpp.o.d"
   )

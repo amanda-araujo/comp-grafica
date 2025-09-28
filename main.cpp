@@ -16,6 +16,7 @@ std::atomic<int> fillColor(1); // 1 = branco
 std::atomic<int> lineWidth(1);
 std::atomic<bool> clearScreen(false);
 std::atomic<int> dataStructure(1); // ET
+std::atomic<bool> fillPolygon(false);
 std::atomic<bool> exitSystem(false);
 
 std::vector<Point> points;
@@ -77,6 +78,11 @@ void display() {
     // glEnd();
 
     drawPolygon(points);
+
+    // Preencher
+    if (fillPolygon) {
+        fillPolygonAET(points);
+    }
 
     glFlush(); // Atualiza a tela
 }
