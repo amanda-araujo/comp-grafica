@@ -137,19 +137,6 @@ comp_grafica/fast:
 .PHONY : comp_grafica/fast
 
 #=============================================================================
-# Target rules for targets named test_glut
-
-# Build rule for target.
-test_glut: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_glut
-.PHONY : test_glut
-
-# fast build rule for target.
-test_glut/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/build
-.PHONY : test_glut/fast
-
-#=============================================================================
 # Target rules for targets named menu
 
 # Build rule for target.
@@ -187,19 +174,6 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
 
 Menu.o: Menu.cpp.o
 .PHONY : Menu.o
@@ -288,84 +262,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-test.o: test.cpp.o
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
-
-test_glut.o: test_glut.cpp.o
-.PHONY : test_glut.o
-
-# target to build an object file
-test_glut.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test_glut.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/test_glut.cpp.o
-.PHONY : test_glut.cpp.o
-
-test_glut.i: test_glut.cpp.i
-.PHONY : test_glut.i
-
-# target to preprocess a source file
-test_glut.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test_glut.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/test_glut.cpp.i
-.PHONY : test_glut.cpp.i
-
-test_glut.s: test_glut.cpp.s
-.PHONY : test_glut.s
-
-# target to generate assembly for a file
-test_glut.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/test_glut.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_glut.dir/build.make CMakeFiles/test_glut.dir/test_glut.cpp.s
-.PHONY : test_glut.cpp.s
-
-testopengl.o: testopengl.cpp.o
-.PHONY : testopengl.o
-
-# target to build an object file
-testopengl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/testopengl.cpp.o
-.PHONY : testopengl.cpp.o
-
-testopengl.i: testopengl.cpp.i
-.PHONY : testopengl.i
-
-# target to preprocess a source file
-testopengl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/testopengl.cpp.i
-.PHONY : testopengl.cpp.i
-
-testopengl.s: testopengl.cpp.s
-.PHONY : testopengl.s
-
-# target to generate assembly for a file
-testopengl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_grafica.dir/build.make CMakeFiles/comp_grafica.dir/testopengl.cpp.s
-.PHONY : testopengl.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -379,8 +275,6 @@ help:
 	@echo "... comp_grafica"
 	@echo "... main"
 	@echo "... menu"
-	@echo "... test"
-	@echo "... test_glut"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
@@ -390,15 +284,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
-	@echo "... test_glut.o"
-	@echo "... test_glut.i"
-	@echo "... test_glut.s"
-	@echo "... testopengl.o"
-	@echo "... testopengl.i"
-	@echo "... testopengl.s"
 .PHONY : help
 
 

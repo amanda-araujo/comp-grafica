@@ -19,8 +19,7 @@ private:
     void handleOption2(); // Cor
     void handleOption3(); // Espessura da linha
     void handleOption4(); // Limpar
-    void handleOption5(); // Implementação
-    void handleOption6(); // Preencher
+    void handleOption5(); // Preencher
     void exit();
 };
 

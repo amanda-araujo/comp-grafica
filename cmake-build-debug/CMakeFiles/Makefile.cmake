@@ -61,9 +61,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/comp_grafica.dir/DependInfo.cmake"
-  "CMakeFiles/test_glut.dir/DependInfo.cmake"
   "CMakeFiles/menu.dir/DependInfo.cmake"
   "CMakeFiles/PolygonDrawer.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
-  "CMakeFiles/test.dir/DependInfo.cmake"
   )

@@ -16,19 +16,14 @@ struct Point {
 
 // Estrutura para uma aresta
 struct Edge {
-    int y_max;
+    float ymax;
     float x;
-    float slope_inv;
+    float invSlope;
 };
-
-
 
 // Funções para desenhar polígono
 void drawPolygon(std::vector<Point> points);
-bool compareEdges(const Edge &a, const Edge &b);
-void drawPixel(int x, int y);
-void fillPolygonET(std::vector<Point> points);
-void fillPolygonAET(std::vector<Point> points);
+void fillPolygonAET(const std::vector<Point> &points);
 
 
 #endif //POLYGONDRAWER_H

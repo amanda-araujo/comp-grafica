@@ -1,8 +1,6 @@
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/comp_grafica.dir
-/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/test_glut.dir
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/menu.dir
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/PolygonDrawer.dir
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/main.dir
-/mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/test.dir
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Amanda/CLionProjects/comp-grafica/cmake-build-debug/CMakeFiles/rebuild_cache.dir

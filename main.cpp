@@ -10,14 +10,15 @@
 #include "PolygonDrawer.h"
 #include "OpenGLWindow.h"
 
-// Variáveis globais compartilhadas (inicialização default)
+// Variáveis globais compartilhadas
 std::atomic<bool> onScreen(false);
 std::atomic<int> fillColor(1); // 1 = branco
 std::atomic<int> lineWidth(1);
 std::atomic<bool> clearScreen(false);
-std::atomic<int> dataStructure(1); // ET
 std::atomic<bool> fillPolygon(false);
 std::atomic<bool> exitSystem(false);
+std::atomic<bool> destroyerPolygon(false); // (adios)
+
 
 std::vector<Point> points;
 
@@ -44,7 +45,6 @@ void mouse(int button, int state, int x, int y) {
         } else {
             std::cout << "Nothing to delete!" << std::endl;
         }
-
         //std::cout << "Right button pressed (" << x << ", " << y << ")"  << std::endl;
         //std::cout << "Right button pressed (" << x_gl << ", " << y_gl << ")"  << std::endl;
     }
@@ -55,7 +55,13 @@ void mouse(int button, int state, int x, int y) {
 
 void display() {
     if (clearScreen) {
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT); // Limpar o buffer de cor
+
+        if (destroyerPolygon) { // Adios Polygon bye bye
+            points.clear();
+            destroyerPolygon = false;
+        }
         clearScreen = false;
     }
 
@@ -70,21 +76,15 @@ void display() {
     // Espessura com base na especificação do usuário
     glLineWidth(lineWidth.load());
 
-    // /* Figura: triângulo */
-    // glBegin(GL_TRIANGLES);
-    // glVertex2f(-0.5, -0.5);
-    // glVertex2f( 0.5, -0.5);
-    // glVertex2f( 0.0,  0.5);
-    // glEnd();
-
+    // Desenho das arestas do polígono (triângulos)
     drawPolygon(points);
 
-    // Preencher
-    if (fillPolygon) {
+    // Preenchimento do polígono
+    if (fillPolygon.load() && points.size() >= 3) {
         fillPolygonAET(points);
     }
 
-    glFlush(); // Atualiza a tela
+    glutSwapBuffers(); // Atualiza a tela //glFlush();
 }
 
 void timer(int) {
@@ -100,7 +100,6 @@ void idle_func() {
     glutPostRedisplay();
 }
 
-
 void startOpenGLWindow(int argc, char** argv) {
     // OpenGL
     glutInit(&argc, argv); // Inicializando o GLUT
@@ -108,7 +107,7 @@ void startOpenGLWindow(int argc, char** argv) {
 
     // Propriedades da janela
     glutInitWindowSize(500, 500);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 
     // Alterações na matriz de projeção da janela
     glMatrixMode(GL_PROJECTION);
